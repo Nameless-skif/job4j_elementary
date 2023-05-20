@@ -1,19 +1,20 @@
 package calculator;
 
 public class Calculator {
-    public static void main(String[] arg) {
-        int one = 1;
-        int two = 2;
-        int onePlusTwo = one + two;
-        System.out.println(onePlusTwo);
+    public static void plus(int first, int second) {
+        int result = first + second;
+        System.out.println(result);
+    }
 
-        int six = 6;
-        int five = 5;
-        int four = 4;
-        int sixDivTwo = six / two;
-        int fiveMinusTwo = five - two;
-        int fourTimeTwo = four * two;
+    public static void minus(int first, int second) {
+        int result = first - second;
+        System.out.println(result);
+    }
 
-        System.out.println(sixDivTwo + " " + fiveMinusTwo + " " + fourTimeTwo);
+    public static void main(String[] args) {
+        plus(1, 2);
+        plus(10, 11);
+        minus(7, 3);
+        minus(2, 6);
     }
 }
