@@ -1,4 +1,4 @@
-package calculator;
+package ru.job4j.calculator;
 
 public class ArgMethod {
     public static void hello(String name, int age) {
