@@ -1,7 +1,6 @@
 package ru.job4j.condition;
 
 public class SwitchWeek {
-    @SuppressWarnings("checkstyle:EmptyBlock")
     public static String nameOfDay(int day) {
         String name;
         switch (day) {
