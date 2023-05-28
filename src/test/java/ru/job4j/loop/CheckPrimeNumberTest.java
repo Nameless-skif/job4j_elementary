@@ -24,4 +24,39 @@ public class CheckPrimeNumberTest {
         boolean result = CheckPrimeNumber.check(number);
         assertThat(result).isFalse();
     }
+
+    @Test
+    public void when3() {
+        int number = 3;
+        boolean result = CheckPrimeNumber.check(number);
+        assertThat(result).isTrue();
+    }
+
+    @Test
+    public void when2() {
+        int number = 2;
+        boolean result = CheckPrimeNumber.check(number);
+        assertThat(result).isTrue();
+    }
+
+    @Test
+    public void when7() {
+        int number = 7;
+        boolean result = CheckPrimeNumber.check(number);
+        assertThat(result).isTrue();
+    }
+
+    @Test
+    public void when11() {
+        int number = 11;
+        boolean result = CheckPrimeNumber.check(number);
+        assertThat(result).isTrue();
+    }
+
+    @Test
+    public void when10() {
+        int number = 10;
+        boolean result = CheckPrimeNumber.check(number);
+        assertThat(result).isFalse();
+    }
 }
