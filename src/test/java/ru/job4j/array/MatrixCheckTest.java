@@ -42,9 +42,9 @@ import static org.assertj.core.api.Assertions.assertThat;
     @Test
     public void whenHasNotMonoVertical() {
         char[][] input = {
+                {' ', ' ', 'X'},
                 {' ', ' ', ' '},
-                {' ', ' ', ' '},
-                {' ', ' ', ' '},
+                {' ', ' ', 'X'},
         };
         int column = 2;
         boolean result = MatrixCheck.monoVertical(input, column);
