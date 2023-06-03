@@ -1,27 +1,21 @@
 package ru.job4j.array;
 
 public class TwoNumberSum {
-    @SuppressWarnings("checkstyle:RightCurly")
     public static int[] getIndexes(int[] array, int target) {
         int i = 0;
-        int j = 1;
-        int[] res = new int[2];
-        while (i < array.length) {
-            if (array[i] + array[j] == target && j < array.length) {
-                res[0] = i;
-                res[1] = j;
+        int j = array.length - 1;
+        while (i != j) {
+            if (array[i] + array[j] == target) {
                 break;
             }
-            if (j < array.length - 1) {
-                j++;
-            } else {
+            if (j > 0) {
+                j--;
+            }
+            if (i == j - 1) {
                 i++;
-                j = i + 1;
-                if (j == array.length) {
-                    break;
-                }
+                j = array.length - 1;
             }
         }
-        return res[1] > 0 ? res : new int[0];
+        return array[i] + array[j] == target ? new int[] {i, j} : new int[0];
     }
 }
